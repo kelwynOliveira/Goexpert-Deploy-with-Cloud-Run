@@ -8,6 +8,6 @@ test:
 	go test -v ./internal/usecases/
 
 dev:
-	docker-compose up api_dev
+	docker-compose up app_dev
 
-.PHONY: run test dev
+.PHONY: run test dev up

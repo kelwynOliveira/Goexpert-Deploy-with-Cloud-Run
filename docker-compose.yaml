@@ -1,24 +1,20 @@
 version: '3'
 
 services:
-  api_dev:
-    env_file:
-      - path: ./cmd/.env
-        required: true
-    image: kelwynOliveira/Goexpert-Deploy-with-Cloud-Run
+  app_dev:
+    env_file: ./.env
+    image: kelwynoliveira/goexpert-deploy-with-cloud-run
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
 
-  api_prod:
-    env_file:
-      - path: ./cmd/.env
-        required: true
+  app_prod:
+    env_file: ./.env
     build:
       context: .
       dockerfile: Dockerfile.prod
-    image: kelwynOliveira/Goexpert-Deploy-with-Cloud-Run
+    image: kelwynoliveira/goexpert-deploy-with-cloud-run
     ports:
       - "8080:8080"

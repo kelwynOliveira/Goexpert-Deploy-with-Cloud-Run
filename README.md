@@ -49,15 +49,13 @@ e.g.: `http://localhost:8080/?zipcode=01153000`
 
 ### Locally (dev)
 
-Set your WeatherAPI APIKey in the `WEATHER_API_KEY` variable in the cmd/api/.env file.
+Set your WeatherAPI APIKey in the `WEATHER_API_KEY` variable in the `.env` file.
 
 - Tests: run `make test`.
-- Docker compose: run `make dev`
+- Docker-compose: run `make dev`
 - Server Port: `8080`
 
 ### Cloud Run
 
-- Endpoint:
-- Request e.g:
-
-## Lab Solution Development
+- Endpoint: https://goexpert-deploy-with-cloud-run-2vu3ey4oua-uc.a.run.app/
+- Request e.g: https://goexpert-deploy-with-cloud-run-2vu3ey4oua-uc.a.run.app/?zipcode=29902555

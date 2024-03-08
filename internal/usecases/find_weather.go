@@ -2,6 +2,7 @@ package usecases
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"net/url"
@@ -27,9 +28,10 @@ func NewFindByCityNameUseCase(
 
 func (uc *FindByCityNameUseCase) GetWeather(city string) (*entity.Forecast, error) {
 	var weather entity.Forecast
-	weatherAPIURL := "https://api.weatherapi.com/v1/current.json?key=" + uc.APIKey + "&q=" + url.QueryEscape(city) + "&aqi=no"
 
-	request, err := http.Get(weatherAPIURL)
+	request, err := http.Get(
+		fmt.Sprintf("https://api.weatherapi.com/v1/current.json?key=%s&q=%s&aqi=no", uc.APIKey, url.QueryEscape(city)),
+	)
 	if err != nil {
 		return nil, err
 	}
