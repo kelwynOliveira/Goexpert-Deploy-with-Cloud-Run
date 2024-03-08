@@ -52,7 +52,7 @@ e.g.: `http://localhost:8080/?zipcode=01153000`
 Set your WeatherAPI APIKey in the `WEATHER_API_KEY` variable in the `.env` file.
 
 - Tests: run `make test`.
-- Docker-compose: run `make dev`
+- Docker-compose: run `make docker`
 - Server Port: `8080`
 
 ### Cloud Run

@@ -9,12 +9,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-
-  # app_prod:
-  #   env_file: ./.env
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.prod
-  #   image: kelwynoliveira/goexpert-deploy-with-cloud-run
-  #   ports:
-  #     - "8080:8080"

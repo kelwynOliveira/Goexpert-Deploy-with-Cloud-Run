@@ -4,7 +4,7 @@ run:
 test:
 	go test -v ./internal/usecases/
 
-dev:
-	docker-compose up -d app_dev
+docker:
+	docker-compose up -d
 
 .PHONY: run test dev up
