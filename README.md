@@ -59,3 +59,5 @@ Set your WeatherAPI APIKey in the `WEATHER_API_KEY` variable in the `.env` file.
 
 - Endpoint: https://goexpert-deploy-with-cloud-run-2vu3ey4oua-uc.a.run.app/
 - Request e.g: https://goexpert-deploy-with-cloud-run-2vu3ey4oua-uc.a.run.app/?zipcode=29902555
+
+|[App showing the response](./thumbApp.PNG)
