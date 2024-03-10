@@ -54,6 +54,7 @@ Set your WeatherAPI APIKey in the `WEATHER_API_KEY` variable in the `.env` file.
 - Tests: run `make test`.
 - Docker-compose: run `make docker`
 - Server Port: `8080`
+  e.g.: `http://localhost:8080/?zipcode=29902555`
 
 ### Cloud Run
 
