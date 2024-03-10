@@ -5,6 +5,6 @@ test:
 	go test -v ./internal/usecases/
 
 docker:
-	docker-compose up
+	docker-compose up --build -d
 
 .PHONY: run test dev up

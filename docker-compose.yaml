@@ -2,7 +2,8 @@ version: '3'
 
 services:
   app_dev:
-    env_file: ./.env
+    env_file: 
+      - ./.env
     image: kelwynoliveira/goexpert-deploy-with-cloud-run
     build:
       context: .
